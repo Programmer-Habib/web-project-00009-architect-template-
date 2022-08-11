@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana,sans-serif;
+}
+
+/* nav section start */
+.nav{
+    width: 100%;
+    padding: 15px;
+    letter-spacing: 2.5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+/* .logo{} */
+.logo a{
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.logo a:hover{
+    background-color: #CCCCCC;
+}
+/* .logo a strong{} */
+/* .menu{} */
+.menu ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    background-color: #CCCCCC;
+}
+/* nav section end */
+
+/* header section start */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/architect.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+header h1 span.header-span1{
+    padding: 12px 16px;
+    background-color: rgba(0,0,0,.5);
+    font-weight: 900;
+}
+/* header section end */
+
+/* section gallery start */
+.gallery{
+    width: 100%;
+    margin: auto;
+}
+.gallery h2{
+    margin: 50px 0px 50px 0px;
+    font-weight: 400;
+}
+.images{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.image{
+    width: 24%;
+    position: relative;
+}
+.image img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.image p{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    color: #fff;
+    padding: 8px 12px;
+}
+/* section gallery end */
+
+/* article section start */
+    .article{
+        width: 100%;
+        margin: auto;
+    }
+    .article h2{
+        margin: 50px 0px 30px 0px;
+        font-weight: 400;
+    }
+    .article p{
+        word-spacing: 2px;
+        line-height: 1.5em;
+    }
+/* article section end */
+
+/* card section start */
+.founder{
+    width: 100%;
+    margin: auto;
+}
+.cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.cards-card{
+    width: 24%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.cards-card img{
+    width: 100%;
+}
+.cards-card h2{
+    margin-top: 20px;
+    font-weight: 400;
+}
+.cards-card p{
+    margin-top: 20px;
+}
+.cards-card p span{
+    color: gray;
+}
+.cards-card-btn{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+}
+/* card section end */
+
+/* form section start */
+.form{
+    width: 100%;
+    margin: auto;
+}
+.form h2{
+    margin-top: 100px;
+    font-weight: 400;
+}
+.form p{
+    margin-top: 50px;
+}
+.form form{
+    margin-top: 20px;
+}
+#info{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.form-button{
+    padding: 10px 30px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+/* form section end */
+
+/* bottom background section start */
+.bottom-background{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url(image/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* bottom background section end */
+
+/* Footer section start */
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: black;
+}
+footer p{
+    padding: 50px;
+    color: #fff;
+}
+footer p a{
+    color: #fff;
+}
+footer p a:hover{
+    color: #39833C;
+}
+/* Footer section end */
+
+/* for desktop start */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* for desktop end */
+
+/* for tablet start */
+@media only screen and (max-width: 768px){
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+    header{
+        height: 65vh;
+        position: relative;
+    }
+    .images{
+        flex-wrap: wrap;
+    }
+    .image{
+        width: 48%;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .cards-card{
+        width: 48%;
+    }
+    .bottom-background{
+        height: 60vh;
+    }
+
+}
+/* for tablet end */
+
+/* for mobile start */
+@media only screen and (max-width: 600px){
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+.menu{
+    display: none;
+}
+header{
+    height: 49vh;
+    position: relative;
+}
+header h1 span.header-span2{
+    display: none;
+}
+.images{
+    flex-wrap: wrap;
+}
+.image{
+    width: 100%;
+}
+.cards{
+    flex-wrap: wrap;
+}
+.cards-card{
+    width: 100%;
+}
+.bottom-background{
+    height: 60vh;
+}
+}
+/* for mobile end */
